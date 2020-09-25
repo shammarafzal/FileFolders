@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FileFolders.View.PDFDownloader"
+    xmlns:local="clr-namespace:FileFolders"  
+      Title="Download PDF">
+ <StackLayout>  
+        <WebView x:Name="Browser"   
+                 Source ="https://www.google.com/"  
+                 Navigating="webOnNavigating"  
+                 HorizontalOptions="FillAndExpand"  
+                 VerticalOptions="FillAndExpand"
+                 
+                 />
+         <Button Text="Download PDF" BackgroundColor="Purple"
+                        WidthRequest="125" TextColor="White" CornerRadius="22"
+                        Clicked="Button_Clicked"></Button>
+    </StackLayout>  
+</ContentPage>

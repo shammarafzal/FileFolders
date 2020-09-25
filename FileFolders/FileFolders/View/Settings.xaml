@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FileFolders.View.Settings"
+               Title="Backup Files">
+     <TableView  HasUnevenRows="true" >
+          <TableRoot>
+            
+              <TableSection Title="Back up now" >
+                  <ViewCell>
+                    <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                          <Button Text="Back up Files" BackgroundColor="Purple"
+                        WidthRequest="125" TextColor="White" Clicked="Button_Clicked" CornerRadius="22"/>
+                        </StackLayout>
+                  </ViewCell>
+              </TableSection>
+              <TableSection Title="Restore Data" >
+                  <ViewCell>
+                    <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                          <Button Text="Restore Files" BackgroundColor="Purple"
+                        WidthRequest="125" TextColor="White" Clicked="Button_Clicked_2" CornerRadius="22"/>
+                        
+                    </StackLayout>
+                  </ViewCell>
+              </TableSection>
+              
+
+
+        </TableRoot>
+      </TableView>
+</ContentPage>

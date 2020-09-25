@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FileFolders.View.Login_Screen"
+    Shell.NavBarIsVisible="false"
+    Shell.TabBarIsVisible="False">
+    <StackLayout>
+        <Label Text="Login" HorizontalOptions="Center" Margin="0,80,0,0" FontSize="Title" TextColor="Blue"></Label>
+        <Label Text="Email" TextColor="Blue" Margin="20,30,20,0" FontAttributes="Bold"></Label>
+        <Entry Margin="20,10,20,7" TextColor="Blue" HorizontalTextAlignment="Center" x:Name="txtEmail"></Entry>
+        <Label Text="Password" TextColor="Blue" Margin="20,10,20,0" FontAttributes="Bold"></Label>
+        <Entry  IsPassword="True" Margin="20,10,20,0" TextColor="Blue" HorizontalTextAlignment="Center" x:Name="txtPassword"></Entry>
+        <Button Margin="20,10,20,0" Text="Login" BackgroundColor="Blue" TextColor="White" CornerRadius="25" x:Name="btnLogin" Clicked="Button_Clicked"></Button>
+        <Button Margin="20,100,20,0" Text="Login with Google" BackgroundColor="Blue" TextColor="White" CornerRadius="25" x:Name="btn_Google" Clicked="btn_Google_Clicked"></Button>
+
+
+    </StackLayout>
+</ContentPage>

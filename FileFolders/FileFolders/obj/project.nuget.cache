@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "dgSpecHash": "D8m8zkyHVuz4HjzUpx4LeX7RTyPKLykJD1LvlM1HE83PArFRxq02uHXZt/DmfyI6LmtrZn7cRXlZ1m8ZnIsqmQ==",
+  "success": true,
+  "projectFilePath": "/Users/ammarafzal/Projects/FileFolders/FileFolders/FileFolders.csproj",
+  "expectedPackageFiles": [
+    "/Users/ammarafzal/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/plugin.permissions/6.0.1/plugin.permissions.6.0.1.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/sharpziplib/1.2.0/sharpziplib.1.2.0.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/sqlite-net-pcl/1.7.335/sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/sqlitepclraw.bundle_green/2.0.3/sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/sqlitepclraw.core/2.0.3/sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.3/sqlitepclraw.lib.e_sqlite3.2.0.3.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.0.3/sqlitepclraw.provider.e_sqlite3.2.0.3.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/syncfusion.licensing/18.2.0.58/syncfusion.licensing.18.2.0.58.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/syncfusion.xamarin.compression/18.2.0.54/syncfusion.xamarin.compression.18.2.0.54.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/syncfusion.xamarin.core/18.2.0.58/syncfusion.xamarin.core.18.2.0.58.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/syncfusion.xamarin.datasource/18.2.0.58/syncfusion.xamarin.datasource.18.2.0.58.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/syncfusion.xamarin.gridcommon/18.2.0.58/syncfusion.xamarin.gridcommon.18.2.0.58.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/syncfusion.xamarin.pdf/18.2.0.54/syncfusion.xamarin.pdf.18.2.0.54.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/syncfusion.xamarin.sfbusyindicator/18.2.0.54/syncfusion.xamarin.sfbusyindicator.18.2.0.54.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/syncfusion.xamarin.sflistview/18.2.0.58/syncfusion.xamarin.sflistview.18.2.0.58.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/syncfusion.xamarin.sfpdfviewer/18.2.0.54/syncfusion.xamarin.sfpdfviewer.18.2.0.54.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/syncfusion.xamarin.sfprogressbar/18.2.0.54/syncfusion.xamarin.sfprogressbar.18.2.0.54.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/syncfusion.xamarin.sfrangeslider/18.2.0.54/syncfusion.xamarin.sfrangeslider.18.2.0.54.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/xam.plugin.media/5.0.1/xam.plugin.media.5.0.1.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/xam.plugins.downloadmanager/1.4.0/xam.plugins.downloadmanager.1.4.0.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/xamarin.auth/1.7.0/xamarin.auth.1.7.0.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/xamarin.ffimageloading/2.4.11.982/xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/xamarin.ffimageloading.forms/2.4.11.982/xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/xamarin.forms/4.5.0.495/xamarin.forms.4.5.0.495.nupkg.sha512",
+    "/Users/ammarafzal/.nuget/packages/xamarin.plugin.filepicker/2.1.41/xamarin.plugin.filepicker.2.1.41.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Xam.Plugins.DownloadManager 1.4.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Xam.Plugins.DownloadManager",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
+}

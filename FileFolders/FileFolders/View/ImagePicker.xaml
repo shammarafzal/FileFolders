@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FileFolders.View.ImagePicker"
+             x:Name="FolderView">
+    <ContentPage.Content>
+        <StackLayout Padding="25">
+            <Label x:Name="lbl" Text="Select Images to Copy"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="Black"
+                   FontSize="Large"
+                   FontAttributes="Bold" />
+        <StackLayout HorizontalOptions="CenterAndExpand" Padding="25">
+                <Button Text="Select Images" BackgroundColor="Purple"
+                        WidthRequest="125" TextColor="White" CornerRadius="22"
+                        Clicked="Button_Clicked"></Button>
+
+                 <Button Text="Select File" BackgroundColor="Purple"
+                        WidthRequest="125" TextColor="White" CornerRadius="22"
+                        Clicked="File_Picked"></Button>
+           <Button Text="Auto Copy" BackgroundColor="Purple"
+                        WidthRequest="125" TextColor="White" CornerRadius="22"
+                        Clicked="Auto_Copy"></Button>
+            <Button Text="Download PDF" BackgroundColor="Purple"
+                        WidthRequest="125" TextColor="White" CornerRadius="22"
+                        Clicked="Button_Clicked_1"></Button>
+             <Button Text="Logout" BackgroundColor="Purple"
+                        WidthRequest="125" TextColor="White" CornerRadius="22"
+                        Clicked="Button_Clicked_2"></Button>
+            </StackLayout>
+        <StackLayout Margin="0,0,0,20">
+           <ScrollView>
+			<StackLayout x:Name="ListImages">
+			</StackLayout>
+		    </ScrollView>
+         </StackLayout>
+            <ListView x:Name="FileListView"  ItemsSource="{Binding Source={x:Reference FolderView}, Path=BindingContext.MyList}"  HasUnevenRows="True">  
+                     <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <StackLayout HorizontalOptions="StartAndExpand">
+                                        <Label Text="{Binding Files}" Padding="7"
+                                               TextColor="Black" />
+                                        <Label Text="{Binding Dates}" Padding="7"
+                                               TextColor="Black" Opacity="0.5"/>
+                                    </StackLayout>
+                                    
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+            </ListView>  
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

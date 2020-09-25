@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FileFolders.View.FileHandler"
+             x:Name="FolderView">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".5*"/>
+                <RowDefinition Height="1.2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Margin="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label x:Name="lblMan" Grid.Column="1" Text="File Manager" TextColor="Black" FontSize="22" FontAttributes="Bold" Opacity="0.6" HorizontalOptions="Center" VerticalOptions="Center"/>
+                
+            </Grid>
+            <StackLayout Grid.Row="1" Grid.RowSpan="2" Spacing="0" HorizontalOptions="Center" VerticalOptions="Center">
+               <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                   <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="8*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                                <SearchBar Grid.Row="0" Grid.Column="0" TextChanged="OnBtnPressed"  x:Name="MainSearchBar" BackgroundColor="Transparent" />
+              
+                                <Image Source="add.png" Grid.Row="0" Grid.Column="1" HeightRequest="30" WidthRequest="30" HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                                Tapped="Create_Directory"
+                                             />
+                                    </Image.GestureRecognizers>
+                                </Image>
+
+                 </Grid>  
+
+                 <ListView x:Name="FolderListView" ItemTapped="FolderListView_ItemTapped" ItemsSource="{Binding Source={x:Reference FolderView}, Path=BindingContext.MyList}" HasUnevenRows="True">  
+                      <ListView.ItemTemplate>  
+                        <DataTemplate>  
+                            <ViewCell Tapped="ViewCell_Tapped">  
+                             <!--   Swipe for more -->
+                                <ViewCell.ContextActions>
+						            <MenuItem Clicked="OnMore" CommandParameter="{Binding .}" Text="Rename" />
+        
+                                     <MenuItem Clicked="MenuItem_Clicked" CommandParameter="{Binding .}" Text="Change Img" />
+                                     <MenuItem Clicked="OnDelete" CommandParameter="{Binding .}" Text="Delete" IsDestructive="True" />
+					            </ViewCell.ContextActions>
+                              
+                            <StackLayout Orientation="Horizontal">
+                               
+                                <Image Source="{Binding Image}" WidthRequest="50" HeightRequest="50" />
+                                <Label Text="{Binding Name}" Padding="7" TextColor="Black"/>
+                                    
+                                
+
+                            </StackLayout>
+                           </ViewCell>
+                        </DataTemplate>  
+                    </ListView.ItemTemplate>  
+                  </ListView>  
+            </StackLayout>
+            
+        </Grid>
+</ContentPage>
